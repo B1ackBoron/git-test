@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+
+<body>
+
+  <div class="bg-wallpaper"></div>
+  <div class="bg-overlay"></div>
+  <div class="container">
+
+    <h1>Таблица 2</h1>
+
+    <nav>
+      <div class="table-links">
+        <a class="table-link" href="../index.html">Главная</a>
+        <a class="table-link" href="table1.html">Таблица 1</a>
+        <a class="table-link" href="table2.html">Таблица 2</a>
+      </div>
+    </nav>
+
+    <table class="table2">
+      <caption>Вторая таблица, РОДИТЕЛЬСКАЯ</caption>
+      <tr>
+        <td colspan="2">1,2</td>
+        <td class="table2-td3">3</td>
+      </tr>
+      <tr>
+        <td class="table2-td4">4</td>
+        <td colspan="2" rowspan="2">
+          <table class="table2-child">
+            <caption>Вторая таблица, ДОЧЕРНЯЯ</caption>
+            <tr>
+              <td>1</td>
+              <td class="height-200px" rowspan="3">2,5,8</td>
+              <td class="height-200px" rowspan="2">3,6</td>
+            </tr>
+            <tr>
+              <td class="height-200px" rowspan="2">4,7</td>
+            </tr>
+            <tr>
+              <td>9</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>7</td>
+      </tr>
+    </table>
+
+  </div>
+</body>
+
+</html>
